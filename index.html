@@ -1,0 +1,114 @@
+<html>
+    <head><title>This is my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+    <body>
+        <div>   
+        <nav class="navbar">
+        <img src="logo.jpg" class="pic">
+        <a href="#Home" >Home</a>
+        <a href="" >About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">projects</a>
+        <a href="#form">contact</a></nav></div>
+
+<div class="container">
+<h1  id="Home"> Hi,I'm SAI HARSHITHA<br>
+ASPIRING DATA ANALYST<br>
+
+Motivated professional with strong problem-solving and
+analytic skills, seeking to contribute to adynamic team 
+by delivering innnovative solutions,enhancing user
+ experience,and supporting organizational growth through
+continous learning and collaboration.<br>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-linkedin"></i></h1>
+<div class="image"> <img src="sai1.jpeg" alt="photo"></div>
+</div>
+
+
+<div id="skills">
+    <h3>Skills</h3>
+<h2>
+JAVA<br>
+PYTHON<br>
+HTML&CSS<br>
+   </h2>
+</div>
+
+
+<section id="projects">
+<h2>Projects</h2><br>
+<div class="projects">
+<div class="card">Portfolio Website</div>
+<div class="card">To-Do List</div>
+<div class="card">Food Habits</div>
+</div>
+</section>
+
+
+
+<script>
+ function validateForm(){ 
+        let name=document.getElementById("name").value;
+        let mobile=document.getElementById("mobile").value;
+        let email=document.getElementById("email").value;
+
+        let namePattern=/^[a-zA-Z ]{6,}$/;
+        let mobilePattern=/^[0-9]{10}$/;
+        let emailPattern=/^\S+@\S+\.\S+$/;
+
+     if(!namePattern.test(name))
+	{
+  	  alert("Invalid Name Must start with alphabet and it must be 6 characters");
+	  return false;
+        }
+    if(!mobilePattern.test(mobile))
+        {
+  	  alert("Invalid mobile number,it must be  10 digits"); 
+	    return false;      
+	}
+    if(!emailPattern.test(email))
+        {
+	  alert("Invalid mail format");
+	    return false;
+	}
+alert("Thank you for contacting me");
+return true;
+}
+
+</script>
+
+
+<div id="form" onsubmit="return validateForm()">
+
+  <form><fieldset>
+
+    <legend>Contact Details</legend><br>
+USERNAME: <input type="text"  placeholder="enter your name" id="name"><br><br>
+
+PH NUMBER:   <input type="tel" placeholder="enter your number" maxlength="10" id="mobile"><br><br>
+
+
+EMAIL:    <input type="email"  placeholder="enter your valid email" id="email"><br><br>
+
+          <button >submit</button>
+
+</fieldset>
+
+    </form></div>
+
+
+
+</body>
+</html>

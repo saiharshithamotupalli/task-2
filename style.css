@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    /* background-image:url("bg1.JPG"); */
+    background-color:moccasin;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position:relative; */
+}
+.container h1::selection{
+    background-color: yellow;
+    color:red;
+}
+#Home{
+    font-family:serif;
+    font-size:23px;
+}
+.pic{
+    height:100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+.navbar a{
+
+    padding:20px;
+   font-size:20px;
+   color:brown;
+   margin-top:2px;
+   font-weight:bold;
+    font-family:calibri;
+    text-decoration: none;
+    float:right; /* moves links to right */
+    gap: 20px;
+  
+}
+.navbar a:hover{
+    color:green;
+    /* background-color: aqua; */
+}
+ H1::first-line{
+    color:blueviolet;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+/* @media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+} */
+
+.image img {
+  width: 250px;
+  border-radius: 280px;
+}
+#form{
+    align-items: center;
+    /* background-color: white; */
+}
+.Home i{
+    border-radius: 100px;
+
+}
+#form{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    width:500px;
+    height:200px;
+    margin:50px auto;
+    /* background-color:white; */
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#projects h2{
+    text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  color:blue;
+}
+#skills{
+    text-align: center;
+    background-color: white;
+    width:200px;
+    border-radius:10px;
+    margin: 10px auto;
+    font-size:20px;
+    color:blue;
+}
+#skills h3{
+  
+    color:brown
+}
+.btn {
+background-color: white;
+}
+.btn h2{
+    text-transform:uppercase;
+    text-decoration-line: underline;
+}
+.btn button{
+   background-color: #4CAF50;
+   color: red;
+   padding: 12px 25px;
+   border: none;
+   border-radius: 10px;
+   font-size: 18px;
+   cursor: pointer;
+  
+}
+
+button:hover{
+   background-color: yellow;
+}
